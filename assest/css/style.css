@@ -54,6 +54,7 @@ body{
     font-size: 25px;
     font-weight: bold;
     text-align: center;
+    transition: 0.5s;
 }
 
 .card__title{
@@ -101,12 +102,43 @@ body{
     padding:10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    margin-right: 10px;
+}
+
+.card__action button:hover{
+    transform: scale(0.9);
 }
 
 .card:hover .card__img{
     transform: traslateY(-90px) rotate(-20deg);
 }
 
-.card:hover .card__title, .card:hover .card__price{
-    transform: traslate(-20px, -70px);
+.card:hover .card__title{
+    transform: traslate(-38px, -72px);
+}
+
+.card:hover .card__price{
+    transform: traslate(-100px, -72px);
+}
+
+.card__size{
+    margin-top: 150px;
+}
+
+.card__size, .card__color, .card__action{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.4s;
+}
+
+.card:hover .card__size, 
+.card:hover .card__color, 
+.card:hover .card__action{
+    visibility: visible;
+    opacity: 100;
+}
+
+.card:hover .card__size{
+    margin-top: -30px;
 }
