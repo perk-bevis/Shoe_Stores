@@ -110,15 +110,15 @@ body{
 }
 
 .card:hover .card__img{
-    transform: traslateY(-90px) rotate(-20deg);
+    transform: translateY(-90px) rotate(-20deg);
 }
 
 .card:hover .card__title{
-    transform: traslate(-38px, -72px);
+    transform: translate(-38px, -72px);
 }
 
 .card:hover .card__price{
-    transform: traslate(-100px, -72px);
+    transform: translate(-100px, -72px);
 }
 
 .card__size{
